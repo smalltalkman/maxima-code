@@ -213,14 +213,8 @@
     "rtest_atensor"
     "rtest_ctensor"
     "rtest_itensor"
-    ;; On sbcl 1.4.10 we still get out-of-memory errors on many
-    ;; computers on loading lapack => commented these tests out
-    ;; for SBCL.    
-    #-sbcl
     ((mlist simp) "rtest_dgemm")
-    #-sbcl
     ((mlist simp) "rtest_dgeqrf")
-    #-sbcl
     ((mlist simp) "rtest_dgesv")
     ;;  The following functions were used but not defined: ODEPACK::DUMACH in gcl 2.6.12
     "rtest_dlsode"
